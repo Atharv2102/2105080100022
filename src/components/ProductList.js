@@ -6,11 +6,11 @@ const ProductList = ({ products }) => {
     <div>
       {products.map(product => (
         <div key={product.id} className="product-card">
-          <h3>{product.name}</h3>
+          <h3>{product.productName}</h3>
           <p>Price: {product.price}</p>
-          <p>Category: {product.category}</p>
-          <p>Company: {product.company}</p>
-          <p>Rating: {product.rating}</p>
+          <p>Category: {product.rating}</p>
+          <p>Company: {product.discount}</p>
+          <p>Rating: {product.availability}</p>
           <Link to={`/product/${product.id}`}>View Details</Link>
         </div>
       ))}
